@@ -1,0 +1,160 @@
+
+<script src="d3.min.js"></script>
+<script src="squares.js"></script>
+
+  <script type="text/javascript">
+    var number = 0;
+    var squares = 0;
+var h = ""
+var x = '<svg width="100" height="100"><rect width="300" height="100" style="fill:rgb(0,0,0);stroke-width:3;stroke:rgb(0,0,0)" /></svg>';
+
+    function button1() {
+        number = 1;
+//        document.getElementById("number").innerHTML = number;
+    }
+
+    function button2() {
+        number = 2;
+//        document.getElementById("number").innerHTML = number;
+    }
+
+    function button3() {
+        number = 3
+//        document.getElementById("number").innerHTML = number;
+    }
+
+    function button4() {
+        number = 4;
+//        document.getElementById("number").innerHTML = number;
+    }
+
+    function button5() {
+        number = 5;
+//        document.getElementById("number").innerHTML = number;
+    }
+
+    function button6() {
+        number = 6;
+//        document.getElementById("number").innerHTML = number;
+    }
+
+    function button7() {
+        number = 7;
+//        document.getElementById("number").innerHTML = number;
+    }
+
+    function button8() {
+        number = 8;
+//        document.getElementById("number").innerHTML = number;
+    }
+
+    function button9() {
+        number = 9;
+//        document.getElementById("number").innerHTML = number;
+    }
+
+    function button10() {
+        number = 10;
+//        document.getElementById("number").innerHTML = number;
+    }
+    <!-- document.getElementById("number").innerHTML = number; -->
+
+    function subbutton() {
+        squares = number;
+        document.getElementById("squares").innerHTML = number;
+    }
+    <!-- document.getElementById("squares").innerHTML = number; -->
+</script>
+
+<header>
+
+<style type>
+header {
+    text-align: center;
+    background-color: red;
+}
+h {
+text-allign: center;
+}
+
+</style>
+
+    <h> <br>How many squares do you want to try and pack?
+    <br>
+    <button type="button" onClick="button1()">1</button>
+    <button type="button" onClick="button2()">2</button>
+    <button type="button" onClick="button3()">3</button>
+    <button type="button" onClick="button4()">4</button>
+    <button type="button" onClick="button5()">5</button>
+    <button type="button" onClick="button6()">6</button>
+    <button type="button" onClick="button7()">7</button>
+    <button type="button" onClick="button8()">8</button>
+    <button type="button" onClick="button9()">9</button>
+    <button type="button" onClick="button10()">10</button> --->
+    <button type="button" onClick="subbutton(), draw()">Submit</button>
+    <br>
+    <br></h>
+
+</header>
+
+<script type="text/javascript">
+
+function draw() {
+
+h = '<style type=text/css>header {background-color: white;} h {visibility: hidden} </style>';
+document.getElementById("h").innerHTML = h;
+
+<!-- if (squares == 1) { -->
+<!-- x = x; -->
+<!-- document.getElementById("x").innerHTML = x;  -->
+<!-- } else if (squares == 2) { -->
+<!-- x = x + " " + x -->
+<!-- document.getElementById("x").innerHTML = x; -->
+<!-- } else if (squares == 3) { -->
+<!--     x = x + " " + x + " " + x; -->
+<!-- document.getElementById("x").innerHTML = x; -->
+<!-- } else if (squares == 4) { -->
+<!--     x = x + " " + x + " " + x + " " + x; -->
+<!-- document.getElementById("x").innerHTML = x; -->
+<!-- } else if (squares == 5) { -->
+<!--     x = x + " " + x + " " + x + " " + x + " " + x; -->
+<!-- document.getElementById("x").innerHTML = x; -->
+<!-- } else if (squares == 6) { -->
+<!--     x = x + " " + x + " " + x + " " + x + " " + x + " " + x; -->
+<!-- document.getElementById("x").innerHTML = x; -->
+<!-- } else if (squares == 7) { -->
+<!--     x = x + " " + x + " " + x + " " + x + " " + x + " " + x + " " + x; -->
+<!-- document.getElementById("x").innerHTML = x; -->
+<!-- } else if (squares == 8) { -->
+<!--     x = x + " " + x + " " + x + " " + x + " " + x + " " + x + " " + x + " " + x; -->
+<!-- document.getElementById("x").innerHTML = x; -->
+<!-- } else if (squares == 9) { -->
+<!--     x = x + " " + x + " " + x + " " + x + " " + x + " " + x + " " + x + " " + x + " " + x; -->
+<!-- document.getElementById("x").innerHTML = x; -->
+<!-- } else if (squares == 10) { -->
+<!--     x = x + " " + x + " " + x + " " + x + " " + x + " " + x + " " + x + " " + x + " " + x + " " + x; -->
+<!-- document.getElementById("x").innerHTML = x; -->
+<!-- } -->
+
+start(squares);
+}
+<!-- document.getElementById("x").innerHTML = x; -->
+<!-- document.getElementById("h").innerHTML = h; -->
+
+
+</script>
+<body>
+
+<h id="h"></h>
+
+<p id="squares"></p>
+<style>
+p {
+visibility: hidden
+</style>
+
+<a id="x"></a>
+
+</body>
+
+
